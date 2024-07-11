@@ -13,17 +13,17 @@ export default function Login() {
   return (
     <div className="bg-gradient-to-t from-[#0056FE] to-[#2E3CBD] text-white flex justify-center items-center min-h-screen p-4">
       <main className="grid w-full max-w-sm backdrop-blur-sm">
-        <div className="grid grid-cols-2 cursor-pointer text-base relative isolate">
+        <div className="grid grid-cols-2 cursor-pointer text-base text-center relative isolate">
           <label
             id="tab-1"
-            className={`cursor-pointer ${activePanel === 'signin' ? 'bg-white border-x border-teal-200/50 text-[#0056FE]  py-4 px-6 text-center text-gray-800 transition-all duration-300 font-bold' : ''}`}
+            className={`cursor-pointer ${activePanel === 'signin' ? 'bg-white border-x border-teal-200/50  py-4 px-6 text-center text-gray-800 transition-all duration-300 font-bold' : ''}`}
             onClick={() => setActivePanel('signin')}
            >
             Sign in
           </label>
           <label
             id="tab-2"
-            className={`cursor-pointer ${activePanel === 'signup' ? 'bg-white border-x border-teal-200/50 text-[#0056FE] py-4 px-6 text-center text-gray-800 transition-all duration-300 font-bold' : ''}`}
+            className={`cursor-pointer ${activePanel === 'signup' ? 'bg-white border-x border-teal-200/50 py-4 px-6 text-center text-gray-800 transition-all duration-300 font-bold' : ''}`}
             onClick={() => setActivePanel('signup')}
           >
             Sign up

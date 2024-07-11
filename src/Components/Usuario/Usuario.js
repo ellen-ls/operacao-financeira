@@ -1,17 +1,19 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from "react";
+// import { useNavigate } from "react-router-dom";
+import Sidebar from "../shared/Sidebar";
+
 
 function Usuario() {
-
-    const navigate = useNavigate()
+  // const navigate = useNavigate();
   return (
-    <div className='bg-gradient-to-t from-[#0056FE] to-[#2E3CBD] text-white flex justify-center items-center min-h-screen p-4'>
-      usuario
-      
-      <button className='text-black bg-slate-600' onClick={()=> navigate('/')}>botao</button>
-      
+    <div className="flex flex-row h-screen w-screen overflow-hidden">
+      <Sidebar/>
+      <div className="p-4">
+        <div className="bg-slate-500">header</div>
+      </div>
     </div>
-  )
+
+  );
 }
 
-export default Usuario
+export default Usuario;
