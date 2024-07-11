@@ -2,6 +2,7 @@ import React from 'react'
 import logo from './Img/logo-financeiro.png'
 import {DASHBOARD_SIDEBAR_LINKS} from '../../lib/consts/navigations'
 import { Link } from 'react-router-dom'
+import { LuLogOut } from "react-icons/lu";
 
 
 const linkClasses = 'flex items-center gap-2 font-light px-3 py-2 hover:bg-sky-950 hover:no-underline active:bg-neutral-600 rounded-sm text-base'
@@ -13,12 +14,21 @@ function Sidebar() {
             <img className='size-8 rounded-xl' src={logo} alt=''></img>
             <span className='text-neutral-100 text-lg p-2'>Operação Financeira</span>
         </div>
-        <div className='flex-1'>
+        <div className='flex-1 py-8 flex flex-col gap-0.5'>
             {DASHBOARD_SIDEBAR_LINKS.map((item) => (
                 <SidebarLink key={item.key} item={item}/>
             ))}
         </div>
-        <div>Bottom part</div>
+        <div className='flex flex-col gap-0.5 pt-2 border-t border-neutral-700'>
+            <div className='text-xl'>
+                <Link to={'/'} className={linkClasses}>
+                
+                <span className='text-xl text-red-800 font-bold'>Sair</span>
+                <LuLogOut className='text-xl text-red-800' />
+                </Link>
+            </div>
+            
+        </div>
       
     </div>
   )
