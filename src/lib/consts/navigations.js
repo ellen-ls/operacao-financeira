@@ -7,13 +7,13 @@ export const DASHBOARD_SIDEBAR_LINKS = [
     {
         key:'home',
         label: 'Home',
-        path:'/',
+        path:'/usuario',
         icon:<IoHomeSharp />
     },
     {
-        key:'pacientes',
-        label: 'Pacientes',
-        path:'/pacientes',
+        key:'clientes',
+        label: 'Clientes',
+        path:'/clientes',
         icon:<FaPeopleGroup />
     },
     {
@@ -23,9 +23,9 @@ export const DASHBOARD_SIDEBAR_LINKS = [
         icon:<FaTruck />
     },
     {
-        key:'pagamento',
-        label: 'Pagamento',
-        path:'/pagamento',
+        key:'pagamentos',
+        label: 'Pagamentos',
+        path:'/pagamentos',
         icon:<MdPayment />
     },
 ]

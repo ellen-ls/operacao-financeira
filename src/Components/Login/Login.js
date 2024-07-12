@@ -124,9 +124,11 @@ export default function Login() {
                   Sign up
                 </button>
               </form>
-              <p className="spacer-or mx-auto w-2/4 flex items-center justify-center gap-2 text-sm 
-              whitespace-nowrap before:block before:bg-gradient-to-r before:to-[#0056FE] 
-              before:w-2/4 before:h-px after:block after:bg-gradient-to-l after:to-[#2E3CBD] after:w-2/4 after:h-px ">or</p>
+              <p className="spacer-or mx-auto w-2/4 flex items-center 
+              justify-center gap-2 text-sm whitespace-nowrap before:block 
+              before:bg-gradient-to-r before:to-[#0056FE] before:w-2/4 
+              before:h-px after:block after:bg-gradient-to-l 
+              after:to-[#2E3CBD] after:w-2/4 after:h-px">or</p>
               <button type="button" className="!bg-[#4267B2] py-3 px-4 bg-sky-700 text-white 
               relative isolate w-full flex items-center justify-center gap-2 overflow-hidden ring-0 
               outline-none before:absolute before:inset-0 before:-z-10 before:opacity-0 before:transition-all 
