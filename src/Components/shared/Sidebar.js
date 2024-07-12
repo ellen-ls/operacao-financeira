@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from './Img/logo-financeiro.png'
+import perfil from './Img/Night-elf-world-of-warcraft-paint-by-number.jpg'
 import {DASHBOARD_SIDEBAR_LINKS} from '../../lib/consts/navigations'
 import { Link, useLocation } from 'react-router-dom'
 import { LuLogOut } from "react-icons/lu";
@@ -14,6 +15,11 @@ function Sidebar() {
         <div className='flex'>
             <img className='size-8 rounded-xl' src={logo} alt=''></img>
             <span className='text-neutral-100 text-lg p-2'>Operação Financeira</span>
+        </div>
+        <div className='flex flex-col items-center gap-2 text-center pt-4'>
+            <img className='size-24 rounded-full'src={perfil} alt='' ></img>
+            <span className='text-lg'>Night elf</span>
+
         </div>
         <div className='flex-1 py-8 flex flex-col gap-0.5'>
             {DASHBOARD_SIDEBAR_LINKS.map((item) => (
